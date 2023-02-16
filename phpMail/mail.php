@@ -11,11 +11,11 @@ require 'mailPHP/src/SMTP.php';
     $mail->isSMTP(); /* Telling the mailer to use SMTP. */
     $mail->Host='smtp.gmail.com';
     $mail->SMTPAuth=true;
-    $mail->Username='sunderkandel789@gmail.com';
-    $mail->Password='cjvrzbxoucimfmfn';
+    $mail->Username='your gmail id';
+    $mail->Password='you app password note: it need to be generated form gmail';
     $mail->SMTPSecure='ssl';
     $mail->Port=465;
-    $mail->setFrom('sunderkandel789@gmail.com');
+    $mail->setFrom('your gmail id');
     $mail->addAddress($_POST["email"]);
     $mail->isHTML(true);
     $mail->Subject=$_POST['subject'];
